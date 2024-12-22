@@ -51,5 +51,5 @@ print(min(marks))
 print(max(marks))
 print(sum(marks))
 
-mix_list=('hifza'23,46,74.6)
+mix_list=('Sam',23,46,74.6)
 print(mix_list)
