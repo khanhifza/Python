@@ -1,0 +1,11 @@
+# Create a function
+
+def greating():
+    print('*'*20)
+    print("WELCOME!")
+    print("Thank you for signing in")
+    print("*"*20)
+    
+    
+# Calling a function
+greating()
