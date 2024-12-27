@@ -1,11 +1,51 @@
-# Create a function
+# # Create a function
 
-def greating():
-    print('*'*20)
-    print("WELCOME!")
-    print("Thank you for signing in")
-    print("*"*20)
+# def greating(user_name):
+#     print('*'*20)
+#     print(f"WELCOME! {user_name}")
+#     print("Thank you for signing in")
+#     print("*"*20)
     
     
-# Calling a function
-greating()
+# # Calling a function
+# greating("Hifza" )
+# greating("Sam")
+
+# def greeting(user_name,age):
+#  print('*'*20)
+#  print(f'Welcome  {user_name}')
+#  print(f'Age is {age}')
+#  print('*'*20)
+ 
+# greeting('Sam',23)
+
+# def greeting(user_name,age=None): # by default assign age some data so code wiil exceute easily
+#  print('*'*20)
+#  print(f'Welcome  {user_name}')
+#  print(f'Age is {age}')
+#  print('*'*20)
+ 
+# greeting('Sam',23)
+# greeting('hifza',)
+# greeting('zubi',23)
+
+# def greeting(user_name,*hobbies): # * consider the data as list
+#  print(f'Welcome  {user_name}')
+#  print(f'Hobbies are ')
+#  for hobby in hobbies:
+#      print(f'- {hobby}')
+#  print('*'*20)
+ 
+# greeting('Sam','reading','eating')
+# greeting('hifza','travelling','learning')
+# greeting('zubi','swimming','public speaking')
+
+def greeting(user_name, **user_info): # * consider the data as list
+ print(f'Welcome  {user_name}')
+   for  key , value in user_info.items():
+     print(f'{key} is {value}')
+ print('*'*20)
+
+ greeting('sam',age=23,city='Delhi',email='sam@gmail.com')
+ greeting('hifza',age=25)
+ greeting('Zuni')
