@@ -42,10 +42,11 @@
 
 def greeting(user_name, **user_info): # * consider the data as list
  print(f'Welcome  {user_name}')
-   for  key , value in user_info.items():
-     print(f'{key} is {value}')
- print('*'*20)
 
- greeting('sam',age=23,city='Delhi',email='sam@gmail.com')
- greeting('hifza',age=25)
- greeting('Zuni')
+for  key , value in user_info.items():
+     print(f'{key} is {value}')
+print('*'*20)
+
+greeting('sam',age=23,city='Delhi',email='sam@gmail.com')
+greeting('hifza',age=25)
+greeting('Zuni')
